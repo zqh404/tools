@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@mixin VerticalCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.do-ui-image{
+    background-color: #ececec;
+    position: relative;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-loading{
+        display: block;
+        width: 48px;
+        height: 40px;
+        background: url("./loading.gif") no-repeat;
+        @include VerticalCenter;
+    }
+
+    .image-error{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url("./loading-error.png") no-repeat;
+        @include VerticalCenter;
+    }
+
+    .no-image{
+        text-align: center;
+        @include VerticalCenter;
+    }
+}
