@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@mixin iconHover {
+    &:hover {
+        color: #333;
+    }
+}
+
+@font-face {font-family: "iconfont";
+    src: url('./icon/iconfont.eot?t=1557123447401'); /* IE9 */
+    src: url('./icon/iconfont.eot?t=1557123447401#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+    url('./icon/iconfont.woff?t=1557123447401') format('woff'),
+    url('./icon/iconfont.ttf?t=1557123447401') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('./icon/iconfont.svg?t=1557123447401#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 24px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #BCBCC6;
+    cursor: pointer;
+}
+
+.icon-style{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+@mixin iconClose{
+    &:before {
+        content: "\e63c";
+    }
+    @include iconHover;
+}
+
+@mixin iconWarning{
+    background: url("./images/warning.png") no-repeat;
+    background-size: 100%;
+    //&:before{
+    //    content: "\e80f";
+    //}
+}
+
+@mixin iconMessage{
+    background: url("./images/message.png") no-repeat;
+    background-size: 100%;
+    ///*&:before{
+    //    content: "\e78a";
+    //}*/
+}
+
+@mixin iconError{
+    background: url("./images/error.png") no-repeat;
+    background-size: 100%;
+    //&:before{
+    //    content: "\e6c6";
+    //}
+}
+
+@mixin iconSuccess {
+    background: url("./images/success.png") no-repeat;
+    background-size: 100%;
+    //&:before{
+    //    content: "\e617";
+    //}
+}
+
+.dialog-mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.my-ui-dialog {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    .dialog-box {
+        display: block;
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 4px;
+        z-index: 999;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        .dialog-title {
+            display: inline-block;
+            width: calc(100% - 40px);
+            font-size: 1.5rem;
+            margin: 0 0 2rem;
+        }
+
+        .dialog-btn-1 {
+            display: inline-block;
+            .close {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .alert-box{
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+
+            .message-context{
+                display: inline-block;
+                width: 80%;
+                margin-left: 20px;
+                padding-top: 10px;
+                word-break: break-all;
+                vertical-align: top;
+            }
+        }
+        .alert-btn{
+            text-align: right;
+            button{
+                min-width: 80px;
+                background-color: #fff;
+                color: #5C5C66;
+                border-radius: 4px;
+                border: 1px solid #C6C6D9;
+                padding: 10px 16px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .ok{
+                &:hover{
+                    background-color: #37A680;
+                    color: #fff;
+                }
+            }
+
+            .cancel{
+                &:hover{
+                    background-color: #DA8C4C;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .v-modal {
+        width: 700px;
+        min-height: 400px;
+    }
+
+    .v-alert {
+        width: 400px;
+        min-height: 100px;
+
+        .message{
+            @include iconMessage;
+        }
+
+        .success{
+            @include iconSuccess;
+        }
+
+        .error{
+            @include iconError;
+        }
+
+        .warning{
+            @include iconWarning;
+        }
+    }
+
+    .close{
+        @include iconClose;
+    }
+}
